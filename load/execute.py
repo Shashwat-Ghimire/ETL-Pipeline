@@ -68,8 +68,8 @@ def load_to_postgres(spark, input_dir):
     """Load Parquet files to PostgreSQL."""
     jdbc_url = "jdbc:postgresql://localhost:5432/postgres"
     connection_properties = {
-        "user": "postgres",
-        "password": "postgres",
+        "user": pg_un,
+        "password": pg_pw,
         "driver": "org.postgresql.Driver"
     }
 
